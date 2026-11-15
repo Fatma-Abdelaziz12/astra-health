@@ -1,9 +1,9 @@
 import { Router } from "express";
 import type { ZodTypeAny } from "zod";
-import { query } from "../db";
-import { h, validationFail } from "../lib/api";
-import { requireAuth, resolveAstronaut } from "../middleware/auth";
-import { muscleSummarySchema, neuroSchema, rangeSchema, sleepSchema } from "../validators/health";
+import { query } from "../db.js";
+import { h, validationFail } from "../lib/api.js";
+import { requireAuth, resolveAstronaut } from "../middleware/auth.js";
+import { muscleSummarySchema, neuroSchema, rangeSchema, sleepSchema } from "../validators/health.js";
 
 /**
  * Daily, user-entered summaries for the Sleep, Muscle & Bone and

@@ -1,12 +1,12 @@
 import { Router } from "express";
 import { z } from "zod";
-import { query, queryOne } from "../db";
-import { env } from "../env";
-import { h, notFound, validationFail } from "../lib/api";
-import { requireAuth, resolveAstronaut } from "../middleware/auth";
-import { analyzeHealth } from "../assistant/analyzer";
-import { buildHealthContext, buildUIMetrics } from "../assistant/context";
-import { askAstra, buildUserPrompt, type GeminiTurn } from "../assistant/astra";
+import { query, queryOne } from "../db.js";
+import { env } from "../env.js";
+import { h, notFound, validationFail } from "../lib/api.js";
+import { requireAuth, resolveAstronaut } from "../middleware/auth.js";
+import { analyzeHealth } from "../assistant/analyzer.js";
+import { buildHealthContext, buildUIMetrics } from "../assistant/context.js";
+import { askAstra, buildUserPrompt, type GeminiTurn } from "../assistant/astra.js";
 
 /**
  * AI Assistant module — the user's standalone ASTRA_Health_Chatbot, now

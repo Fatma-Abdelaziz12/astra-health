@@ -1,13 +1,13 @@
 import { Router } from "express";
-import { query, queryOne } from "../db";
-import { h, notFound, validationFail } from "../lib/api";
-import { requireAuth, resolveAstronaut } from "../middleware/auth";
+import { query, queryOne } from "../db.js";
+import { h, notFound, validationFail } from "../lib/api.js";
+import { requireAuth, resolveAstronaut } from "../middleware/auth.js";
 import {
   plannerMissionPatchSchema,
   plannerMissionSchema,
   workoutPatchSchema,
   workoutSchema,
-} from "../validators/manage";
+}
 
 /**
  * Per-user, server-persisted management for the Mission Planner and the

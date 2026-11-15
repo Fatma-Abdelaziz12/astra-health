@@ -1,9 +1,9 @@
-import { Router } from "express";
-import { query } from "../db";
-import { h, validationFail } from "../lib/api";
-import { requireAuth, resolveAstronaut } from "../middleware/auth";
-import { documentSchema, rangeSchema } from "../validators/health";
 
+import { Router } from "express";
+import { query } from "../db.js";
+import { h, validationFail } from "../lib/api.js";
+import { requireAuth, resolveAstronaut } from "../middleware/auth.js";
+import { documentSchema, rangeSchema } from "../validators/health.js";
 export const analyticsRouter = Router();
 analyticsRouter.use(requireAuth());
 

@@ -1,9 +1,8 @@
 import { Router } from "express";
-import { query, queryOne } from "../db";
-import { h, notFound, validationFail } from "../lib/api";
-import { requireAuth, resolveAstronaut } from "../middleware/auth";
-import { observationSchema, rangeSchema } from "../validators/health";
-
+import { query, queryOne } from "../db.js";
+import { h, notFound, validationFail } from "../lib/api.js";
+import { requireAuth, resolveAstronaut } from "../middleware/auth.js";
+import { observationSchema, rangeSchema } from "../validators/health.js";
 /**
  * Real, user-entered vital measurements. Nothing is generated: a reading
  * exists only if the user (or a future sensor feed) recorded it. When a saved

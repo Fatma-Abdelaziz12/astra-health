@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { notFound } from "../lib/api";
+import { notFound } from "../lib/api.js";
 import {
   MEDICAL_STANDARDS,
   MISSION_STANDARDS,
   guidelineSummaryForPrompt,
-} from "../knowledge/standards";
-import type { MetricStandard } from "../knowledge/standards";
+} from "../knowledge/standards.js";
+import type { MetricStandard } from "../knowledge/standards.js";
 
 /**
  * Reference knowledge API: cited physiological ranges and NASA/clinical

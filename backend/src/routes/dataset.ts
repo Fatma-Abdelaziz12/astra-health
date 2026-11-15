@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { query, queryOne } from "../db";
-import { h, notFound, validationFail } from "../lib/api";
-import { requireAuth } from "../middleware/auth";
-import { rangeSchema } from "../validators/health";
+import { query, queryOne } from "../db.js";
+import { h, notFound, validationFail } from "../lib/api.js";
+import { requireAuth } from "../middleware/auth.js";
+import { rangeSchema } from "../validators/health.js";
 
 /**
  * The provided workbook is a SIMULATED spaceflight physiology dataset

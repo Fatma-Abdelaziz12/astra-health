@@ -1,9 +1,8 @@
 import { Router } from "express";
-import { query } from "../db";
-import { h, s, strOrNull, validationFail } from "../lib/api";
-import { requireAuth, resolveAstronaut } from "../middleware/auth";
-import { syncSchema } from "../validators/health";
-
+import { query } from "../db.js";
+import { h, s, strOrNull, validationFail } from "../lib/api.js";
+import { requireAuth, resolveAstronaut } from "../middleware/auth.js";
+import { syncSchema } from "../validators/health.js";
 /**
  * Persists the answers collected by the existing Onboarding flow (and the
  * account fields from Sign Up) into the clinical profile tables. Idempotent

@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { query, queryOne } from "../db";
-import { h, validationFail } from "../lib/api";
-import { requireAuth, resolveAstronaut } from "../middleware/auth";
-import { alertsSchema } from "../validators/health";
+import { query, queryOne } from "../db.js";
+import { h, validationFail } from "../lib/api.js";
+import { requireAuth, resolveAstronaut } from "../middleware/auth.js";
+import { alertsSchema } from "../validators/health.js";
 
 /**
  * Heart & Recovery: the user's answers, their alert rule, recent REAL
