@@ -1,5 +1,5 @@
-import { query, queryOne } from "../db";
-import { guidelineSummaryForPrompt } from "../knowledge/standards";
+import { query, queryOne } from "../db.js";
+import { guidelineSummaryForPrompt } from "../knowledge/standards.js";
 
 /**
  * Port of the standalone chatbot's app/health.py. Where the original read
