@@ -1,1 +1,0 @@
-import{t as e}from"./jsx-runtime-CXCudH8Z.js";import{t}from"./DashboardShell-D5oHb7ov.js";import{n,r,t as i}from"./SleepQuality-CHxzwSmt.js";var a=e();function o(){return(0,a.jsx)(t,{headerTitle:(0,a.jsx)(n,{}),headerRight:(0,a.jsx)(i,{}),statusWeekday:!0,children:(0,a.jsx)(r,{})})}export{o as component};
