@@ -1,6 +1,6 @@
 import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import jwt from "jsonwebtoken";
-import { env } from "./env";
+import { env } from "./env.js";
 
 export interface AccessClaims {
   sub: string; // user id
