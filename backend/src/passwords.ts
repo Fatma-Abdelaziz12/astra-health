@@ -1,5 +1,5 @@
 import bcrypt from "bcryptjs";
-import { env } from "./env";
+import { env } from "./env.js";
 
 /**
  * Passwords are stored only as bcrypt hashes (cost 12 by default; 10 under test
