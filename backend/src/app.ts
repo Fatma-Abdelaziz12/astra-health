@@ -13,6 +13,8 @@ import { datasetRouter } from "./routes/dataset.js";
 import { assistantRouter } from "./routes/assistant.js";
 import { knowledgeRouter } from "./routes/knowledge.js";
 import { plannerRouter, workoutRouter } from "./routes/manage.js";
+export function createApp(): express.Express {
+  const app = express();
   app.disable("x-powered-by");
   app.set("trust proxy", 1);
   app.use(helmet());
