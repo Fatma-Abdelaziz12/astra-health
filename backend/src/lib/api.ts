@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
 import type { ZodError } from "zod";
-import { fieldErrors } from "../validation";
+import { fieldErrors } from "../validation.js";
 
 /** Wrap async handlers so rejections hit the central error handler. */
 export function h(
