@@ -1,6 +1,6 @@
-import { env } from "../env";
-import type { AstraHealthContext } from "./context";
-import type { AnalysisResult } from "./analyzer";
+import { env } from "../env.js";
+import type { AstraHealthContext } from "./context.js";
+import type { AnalysisResult } from "./analyzer.js";
 
 /**
  * Port of the standalone chatbot's app/assistant.py (ASTRA_Health_Chatbot).
