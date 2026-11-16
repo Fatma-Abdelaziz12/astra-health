@@ -1,7 +1,7 @@
-import { createApp } from "./app";
-import { env } from "./env";
-import { pool } from "./db";
-import { runMigrations } from "./db/migrate";
+import { createApp } from "./app.js";
+import { env } from "./env.js";
+import { pool } from "./db.js";
+import { runMigrations } from "./db/migrate.js";
 
 const app = createApp();
 
