@@ -1,15 +1,15 @@
 import { Router } from "express";
 import type { Request, Response } from "express";
-import { query, queryOne } from "./db";
-import { hashPassword, verifyPassword } from "./passwords";
+import { query, queryOne } from "./db.js";
+import { hashPassword, verifyPassword } from "./passwords.js";
 import {
   generateRefreshToken,
   hashRefreshToken,
   refreshExpiresAt,
   signAccessToken,
   verifyAccessToken,
-} from "./tokens";
-import { fieldErrors, loginSchema, logoutSchema, refreshSchema, registerSchema } from "./validation";
+} from "./tokens.js";
+import { fieldErrors, loginSchema, logoutSchema, refreshSchema, registerSchema } from "./validation.js";
 
 interface UserRow {
   id: string;
