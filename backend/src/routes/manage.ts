@@ -7,7 +7,7 @@ import {
   plannerMissionSchema,
   workoutPatchSchema,
   workoutSchema,
-}
+} from "../schemas/manage.js";
 
 /**
  * Per-user, server-persisted management for the Mission Planner and the
