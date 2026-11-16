@@ -1,6 +1,6 @@
 import type { NextFunction, Request, Response } from "express";
-import { queryOne } from "../db";
-import { verifyAccessToken } from "../tokens";
+import { queryOne } from "../db.js";
+import { verifyAccessToken } from "../tokens.js";
 
 export interface AuthUser {
   id: string;
