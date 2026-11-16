@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { passwordIssues } from "./passwords";
+import { passwordIssues } from "./passwords.js";
 
 /**
  * Field set mirrors the existing Sign Up / Login forms exactly:
